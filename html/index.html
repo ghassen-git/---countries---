@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="body">
+    <nav>
+      <h1>Where in the world?</h1>
+      <button>
+        <span><ion-icon class="moon" name="moon-outline"></ion-icon></span>Dark
+        Mode
+      </button>
+    </nav>
+
+    <section class="countries-section">
+      <div class="search-filter">
+        <div class="search-bar">
+          <ion-icon class="icon" name="search-outline"></ion-icon
+          ><input type="text" placeholder="Search for a country..." />
+        </div>
+        <div name="" class="filter" id="">
+          <div class="filter-header" value="0">
+            Filter by region <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="options">
+            <ul>
+              <li value="af">Africa</li>
+              <li value="am">America</li>
+              <li value="as">Asia</li>
+              <li value="eu">Europe</li>
+              <li value="eu">Oceania</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="counties-container"></div>
+    </section>
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>
